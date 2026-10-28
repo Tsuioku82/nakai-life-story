@@ -22,6 +22,10 @@
 
 ## 閲覧
 
-Sites配置先：https://nakai-life-story.smmorita3337.chatgpt.site
+一般公開サイト：https://tsuioku82.github.io/nakai-life-story/
 
-閲覧は所有者に限定され、ChatGPTへのログインが必要です。GitHub Pagesは設定していません。文章の個人情報や公開範囲の変更は、本人の掲載承認を確認したうえで行ってください。
+GitHub Pagesで、ログインせずに3ページを閲覧できます。mainへのpush時にGitHub Actionsがソースからdist/を生成し、公開します。
+
+Sitesの制作版：https://nakai-life-story.smmorita3337.chatgpt.site （所有者限定・ChatGPTログインが必要）
+
+個人情報の追加や写真・文章の変更時は、ご本人の掲載承認を確認してください。
