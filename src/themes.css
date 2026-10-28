@@ -1,0 +1,31 @@
+/* The same three-page template in two calm, readable palettes. */
+:root{--paper:#edf5fb;--ink:#264858;--muted:#586f7a;--line:#cadce8;--accent:#536c85;--panel:#deedf7;--panel-deep:#c5ddec;--panel-border:#9bbccf;--photo:#d3e6f3;--hill:#b8d2e5;--hill-back:#c4dbea;--sun:#f6f4e9;--shadow:#dce8f1;--letter:#e4eff7;--photo-ink:#385867}
+:root[data-theme="orange"]{--paper:#fff2e6;--ink:#67462e;--muted:#82664f;--line:#e8cfb8;--accent:#99653e;--panel:#f7e1cb;--panel-deep:#ebc7a4;--panel-border:#d5aa83;--photo:#f6d9ba;--hill:#e8b88e;--hill-back:#efc9a4;--sun:#fff2d8;--shadow:#f3dfca;--letter:#f9e6d2;--photo-ink:#745035}
+.brand-icon{border-color:var(--panel-border)}.nav a[aria-current]{background:var(--panel)}.intro{color:var(--muted)}.read-link{border-color:var(--panel-border)}.book-art{background:var(--panel);border-left-color:var(--panel-border);box-shadow:10px 12px 0 var(--shadow)}.book-topline,.book-bottom,.caption{color:var(--photo-ink)}.book-bottom{border-color:var(--panel-border)}.photo-area,.photo-empty{background:var(--photo)}.photo-empty small{color:var(--photo-ink)}.sun{background:var(--sun)}.hill{background:var(--hill-back)}.hill.h2{background:var(--hill)}.unwritten .story-text{color:var(--muted)}.write{border-color:var(--panel-border)}footer{background:var(--panel);color:var(--photo-ink)}.chapter-art{background:var(--panel);border-color:var(--panel-border);outline-color:var(--panel)}.letters .story:nth-child(2){background:var(--letter)}.editor-note{background:var(--panel)}dialog{border-color:var(--panel-border)}input:not([type=file]),textarea{border-color:var(--panel-border);background:var(--paper)}
+.theme-bar{max-width:1224px;margin:0 auto 20px;padding:12px 0;display:flex;gap:20px;justify-content:flex-end;align-items:center;font-family:var(--sans);font-size:.68rem;flex-wrap:wrap}.theme-bar>span{color:var(--muted)}.theme-options{display:flex;gap:10px;flex-wrap:wrap}.theme-options button{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:8px 14px;border:1px solid var(--panel-border);border-radius:3px;background:var(--paper)}.theme-options button[aria-pressed=true]{background:var(--panel);border:2px solid var(--ink);padding:7px 13px;font-weight:bold}.swatch{display:inline-block;width:17px;height:17px;border-radius:50%;border:1px solid #71818b}.swatch.blue{background:#d3e6f3}.swatch.orange{background:#f6d9ba;border-color:#9c795b}
+@media(max-width:900px){.theme-bar{margin-left:5%;margin-right:5%}}
+@media(max-width:620px){.theme-bar{justify-content:flex-start;gap:8px;padding-top:0;margin-bottom:14px}.theme-bar>span{flex-basis:100%}.theme-options{width:100%;gap:8px}.theme-options button{font-size:.64rem;flex:1;padding:8px 9px;gap:6px}.theme-options button[aria-pressed=true]{padding:7px 8px}}
+@media print{.theme-bar{display:none!important}body,footer,.book-art,.letters .story:nth-child(2){background:white;color:#222}.book-art{box-shadow:none}.photo-empty{background:#eee}.chapter-art{display:none}}
+
+/* Independent edition: readable type and a photograph on every page. */
+:root{font-size:20px;--sans:"BIZ UDPGothic","Meiryo","Hiragino Kaku Gothic ProN",sans-serif;--serif:var(--sans)}
+body{font-family:var(--sans);line-height:1.95;font-weight:500}
+.brand small,.eyebrow,.book-topline,.book-bottom,.chapter-no span,.caption,.section-label,.side-note,.write,.template-note,footer small{font-size:.8rem;letter-spacing:.04em}
+.tools,.theme-bar,.read-link,.page-bottom,.story-heading>p:last-child,aside a,footer p,footer button{font-size:.85rem}
+.theme-bar{justify-content:space-between;padding-inline:48px}.edition{font-weight:700;color:var(--ink)!important}
+.nav a{font-size:.85rem;line-height:1.7}.nav span{font-size:.8rem;margin-right:8px}
+.intro,.years{font-size:1rem}.unwritten .story-text{color:var(--ink)}
+.chapter-description{max-width:1128px;margin:0 auto 40px;padding:24px 30px;background:var(--panel);border-left:4px solid var(--accent);font-size:1rem}
+h1{font-weight:700;letter-spacing:.04em;font-size:clamp(3rem,6vw,5rem)}h3,.story-heading h2{font-weight:700}
+.inner-cover h1{font-size:clamp(2rem,3.8vw,3rem);overflow-wrap:anywhere}.book-art{transform:none}
+.photo-empty p{font-size:1.15rem;letter-spacing:.04em}.photo-empty small{font-size:.78rem;padding:0 15px}
+.reading-layout aside{position:static}.story-text{line-height:2.05}.brand{letter-spacing:.04em}
+.editor-body,.transfer{font-size:.9rem}.editor-note,.transfer p,#photo-status,#transfer-status{font-size:.85rem}
+input:not([type=file]),textarea{font-size:1rem}input[type=file]{font-size:.85rem}.editor-actions{font-size:.9rem}
+.dialog-head h2{font-weight:700}.dialog-head button{font-size:.9rem}
+@media(max-width:900px){.theme-bar{padding-inline:0}.chapter-description{margin-left:6%;margin-right:6%}.cover{gap:32px}.nav a{font-size:.8rem}}
+@media(max-width:620px){:root{font-size:19px}.large{font-size:23px}.theme-bar{font-size:.85rem}.cover h1{font-size:3.4rem}.inner-cover h1{font-size:2rem;line-height:1.6}.nav{grid-template-columns:1fr;margin-inline:6%}.nav a{display:flex;gap:12px;align-items:center;text-align:left;padding:12px;font-size:.9rem}.nav span{display:inline;flex-shrink:0}.chapter-description{padding:20px;font-size:1rem}.book-art{margin:0}.photo-area{height:280px}.reading-layout aside ol{display:block}.tools{flex-wrap:wrap}.brand small{font-size:.75rem}.page-bottom{flex-wrap:wrap;gap:15px}.photo-empty small{font-size:.75rem}.book-bottom{gap:12px;flex-wrap:wrap}}
+@media print{.chapter-description{margin:10px 0;background:white;border:0;padding:0}.theme-bar{display:none}.caption{font-size:10pt}.book-art{break-inside:avoid}.story-text{color:black}}
+
+.inner-cover h1{text-wrap:balance}
+
